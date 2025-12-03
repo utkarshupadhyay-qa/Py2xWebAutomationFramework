@@ -12,7 +12,7 @@ class DashboardPage:
         self.driver = driver
 
     # Page Locators
-    user_logged_in = (By.XPATH, "//span[@data-qa='lufexuloga']")
+    user_logged_in = (By.XPATH, "//h4[@data-qa='cotirufajo']")
 
     # Page Action
     def get_user_logged_in(self):

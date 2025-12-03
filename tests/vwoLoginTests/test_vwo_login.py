@@ -43,8 +43,8 @@ def test_vwo_login_negative(setup):
 def test_vwo_login_positive(setup):
     driver = setup
     loginPage = LoginPage(driver)
-    loginPage.login_to_vwo(usr="py2x@thetestingacademy.com", pwd="Wingify@1234")
+    loginPage.login_to_vwo(usr="utkarsh.qa@proton.me", pwd="Uttu@1234")
     time.sleep(10)
     dashboardPage = DashboardPage(driver)
     assert "Dashboard" in driver.title
-    assert "Aman" in dashboardPage.user_logged_in_text()
+    assert "Set Up Your Account" in dashboardPage.user_logged_in_text()
