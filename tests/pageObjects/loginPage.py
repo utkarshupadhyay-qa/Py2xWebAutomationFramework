@@ -30,7 +30,7 @@ class LoginPage:
     password = (By.NAME, "password")
     submit_button = (By.XPATH, "//button[@id='js-login-btn']")
     # forgot_password_button = (By.XPATH, "//button[normalize-space()='Forgot Password?']")
-    error_message = (By.XPATH, "//div[@id='js-notification-box-msg]")
+    error_message = (By.XPATH, "//div[@id='js-notification-box-msg']")
     free_trial = (By.XPATH, "//a[normalize-space()='Start a free trial']")
 
     # sso_login = (By.XPATH, "//button[normalize-space()='Sign in using SSO']")
