@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-@pytest.fixture(scope="class")   # Scope = class (because this function will be used by a CLASS)
+@pytest.fixture(scope="class")   # Scope = class (because this function will be used by any CLASS)
 def setup(request):
     driver = webdriver.Chrome()
     driver.maximize_window()
