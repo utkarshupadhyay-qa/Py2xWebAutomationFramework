@@ -1,10 +1,10 @@
 # Login Page Class
 
-# Responsibilities ->
+# Responsibilities of Login Page Class :
 # get username and send keys - email
-# # get password and send keys - password
-# # click the submit button and navigate to dashboard Page
-# For Invalid creds. -> error message
+# get password and send keys - password
+# click the submit button and navigate to dashboard Page
+# For Invalid credentials -> error message
 # Forgot password
 
 
@@ -22,7 +22,7 @@ from selenium.webdriver.common.by import By
 
 class LoginPage:
     def __init__(self, driver):  # parameterise constructor
-        self.driver = driver
+        self.driver = driver   # It tells whatever driver is given to me - I will set myself to driver
 
     # Page Locators ( from app.vwo.com)
 
@@ -58,7 +58,7 @@ class LoginPage:
     # Page object class - says that if you are not using any component as of now so don't use it
     # That's why we have commented forgot_password,sso_login,remember_me
 
-    # Page Action - Main Action(login)
+    # Page Action - Main Action- is Login
 
     def login_to_vwo(self, usr, pwd):
         self.get_username().send_keys(usr)
