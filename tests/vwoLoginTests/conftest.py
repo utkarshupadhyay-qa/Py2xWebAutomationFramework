@@ -10,7 +10,7 @@ load_dotenv()
 
 
 @pytest.fixture(scope="class")   # Scope = class (because this function will be used by any CLASS)
-def setup(request):
+def setup(request):   # we can't pass value directly to this -> so request
     driver = webdriver.Chrome()
     driver.maximize_window()
 
@@ -29,7 +29,6 @@ def setup(request):
 
     yield driver # This is signal to Python interpreter -> to tell driver to stop after sometime -> quit
     driver.quit()
-
 
 
 
