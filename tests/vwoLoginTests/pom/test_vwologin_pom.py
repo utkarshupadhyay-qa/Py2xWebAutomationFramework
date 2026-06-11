@@ -11,7 +11,7 @@ from tests.pageObjects.dashboardPage import DashboardPage
 #Login - 1 Positive, 1 Negative, 2 more Negative, Start Trial, Remember me - is checked,
 # 15+ Testcase - P0 - 2-3(P0)
 
-class TestLogin():
+class TestLogin:
     # We have removed setup function from here and put it into conftest - as in all test cases it will be common
 
     @allure.epic("VWO Login Test")
