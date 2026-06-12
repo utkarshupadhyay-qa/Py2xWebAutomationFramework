@@ -6,8 +6,8 @@ import time
 
 @given("I am on the Google Page")   # it should be same heading as .feature file heading
 def step_impl(context):
-    context.browser = webdriver.Chrome()
-    context.browser.maximize_window()
+    context.browser = webdriver.Chrome()   # we use context because driver will not be available in 'Given' and 'Then'
+    context.browser.maximize_window()   # context is inbuilt - it will be available
     context.browser.get("https://www.google.com")
     time.sleep(2)
 
@@ -16,7 +16,7 @@ def step_impl(context):
 def step_impl(context,search_term):
     search_box = context.browser.find_element(By.NAME, 'q')
     search_box.send_keys(search_term)
-    search_box.submit()
+    search_box.submit()    # can use click() as well
     time.sleep(2)
 
 
