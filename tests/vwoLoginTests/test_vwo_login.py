@@ -44,7 +44,7 @@ def test_vwo_login_positive(setup):
     driver = setup
     loginPage = LoginPage(driver)
     loginPage.login_to_vwo(usr="wjkrbiu61@emailgenerator.xyz", pwd="Wingify@123")
-    time.sleep(10)
+    time.sleep(30)
     dashboardPage = DashboardPage(driver)
     assert "Dashboard" in driver.title
     assert "Set Up Your Account" in dashboardPage.user_logged_in_text()
