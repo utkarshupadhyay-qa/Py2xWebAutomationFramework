@@ -4,7 +4,7 @@ import pytest
 
 # WebDriver fixture example
 import os
-from dotenv import load_dotenv
+from dotenv import load_dotenv   # # pip install python-dotenv
 
 load_dotenv()
 
